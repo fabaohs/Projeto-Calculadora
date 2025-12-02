@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'arial' sans-serif;
+    background: linear-gradient(135deg #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculadora {
+    background: #2c3e50;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 320px;
+}
+
+.tela {
+    background: #34495e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+#display {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    min-height: 60px;
+    word-wrap: break-word;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+btn:hover {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0)
+}
+
+.btn-numero {
+    background: #34495e;
+}
+
+.btn-numero:hover {
+    background: #4a6583;
+}
+
+.btn-operador {
+    background: #e67e22;
+}
+
+.btn-operador:hover {
+    background: #f39c12;
+}
+
+.btn-igual {
+    background: #27ae60;
+    grid-row: span 2;
+}
+
+.btn-igual:hover {
+    background: #2ecc71;
+}
+
+.btn-clear {
+    background: #e74c3c;
+}
+
+.btn-clear:hover {
+    background: #c0392b;
+}

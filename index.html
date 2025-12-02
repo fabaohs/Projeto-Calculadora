@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <!-- Tela da calculadora -->
+        <div class="tela">
+            <div id="display">0</div>
+        </div>
+        
+        <!-- Teclado -->
+        <div class="teclado">
+            <!-- Primeira linha -->
+            <button class="btn btn-clear" onclick="limpar()">C</button>
+            <button class="btn btn-operador" onclick="apagar()">⌫</button>
+            <button class="btn btn-operador" onclick="adicionarOperador('/')">/</button>
+            <button class="btn btn-operador" onclick="adicionarOperador('*')">×</button>
+            
+            <!-- Segunda linha -->
+            <button class="btn btn-numero" onclick="adicionarNumero('7')">7</button>
+            <button class="btn btn-numero" onclick="adicionarNumero('8')">8</button>
+            <button class="btn btn-numero" onclick="adicionarNumero('9')">9</button>
+            <button class="btn btn-operador" onclick="adicionarOperador('-')">-</button>
+            
+            <!-- Terceira linha -->
+            <button class="btn btn-numero" onclick="adicionarNumero('4')">4</button>
+            <button class="btn btn-numero" onclick="adicionarNumero('5')">5</button>
+            <button class="btn btn-numero" onclick="adicionarNumero('6')">6</button>
+            <button class="btn btn-operador" onclick="adicionarOperador('+')">+</button>
+            
+            <!-- Quarta linha -->
+            <button class="btn btn-numero" onclick="adicionarNumero('1')">1</button>
+            <button class="btn btn-numero" onclick="adicionarNumero('2')">2</button>
+            <button class="btn btn-numero" onclick="adicionarNumero('3')">3</button>
+            <button class="btn btn-igual" onclick="calcular()" rowspan="2">=</button>
+            
+            <!-- Quinta linha -->
+            <button class="btn btn-numero" onclick="adicionarNumero('0')" colspan="2">0</button>
+            <button class="btn btn-numero" onclick="adicionarDecimal()">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
